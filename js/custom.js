@@ -15,6 +15,26 @@ if ($(this).scrollTop() > 50) {
 });
 
 
+// navbar 
+$('.cstm_navbar').on('click', 'li a', function() {
+  $('.cstm_navbar li.active').removeClass('active');
+  $(this).parent().addClass('active').siblings().removeClass('active');
+
+}); 
+
+$(".menu_btn").click(function(){
+  $(this).toggleClass("active");
+  $(".cstm_navbar").toggleClass("active");
+  $(".cstm_navbar li ").removeClass("active");
+})
+
+$(".back_btn").on('click', function(){
+  $(".cstm_navbar li ").removeClass('active');
+})
+
+
+
+
 
 
 //more sidebvar filter 
@@ -51,7 +71,25 @@ $('#review_slider').slick({
   speed: 600,
   slidesToShow: 1,
   slidesToScroll: 1,
-  
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows:false,
+      }
+    }
+  ]
 });
 // }
 
