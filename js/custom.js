@@ -26,10 +26,12 @@ $(".menu_btn").click(function(){
   $(this).toggleClass("active");
   $(".cstm_navbar").toggleClass("active");
   $(".cstm_navbar li ").removeClass("active");
+  $(".overlay_wraper").toggleClass("active");
 })
 
 $(".back_btn").on('click', function(){
   $(".cstm_navbar li ").removeClass('active');
+  $(".overlay_wraper").removeClass("active");
 })
 
 
