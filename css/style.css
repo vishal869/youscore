@@ -591,7 +591,7 @@ width: 140px;
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  background: url(../images/hexa.svg) no-repeat;
+  /* background: url(../images/hexa.svg) no-repeat; */
 }
 .hexa_ui:last-child{
   width: 17%;
@@ -606,7 +606,7 @@ width: 140px;
   right: 21px;
   left: -53px;
 }
-.hexa_ui a{
+/* .hexa_ui .hexa_inner_ui{
   height: 84%;
   display: flex;
   align-items: center;
@@ -614,10 +614,22 @@ width: 140px;
   transition: 0.2s ease-in-out;
   width: 172px;
   margin-left: 22px;
+} */
+.hexa_ui .hexa_inner_ui {
+	height: 98%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s ease-in-out;
+	width: 212px;
+	margin-left: 5px;
+	background: url(../images/hexa.svg) no-repeat;
+	margin-top: -32px;
+	background-size: 100%;
 }
-.hexa_ui a:hover span{
-  color: #fff;
-    transform: scale(1.12);
+.hexa_ui .hexa_inner_ui:hover  {
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 
@@ -732,8 +744,9 @@ width: 140px;
   background: url(../images/hexa_large.svg) no-repeat;
   background-position: center;
   justify-content: center;
+  transition: 0.2s ease-in-out;
 }
-.consulting_card .hexa_card a{
+.consulting_card .hexa_card .hexa_card_inner{
   height: 90%;
   display: inline-flex;
   align-content: center;
@@ -741,8 +754,9 @@ width: 140px;
   justify-content: center;
   transition: 0.2s ease-in-out;
 }
-.consulting_card .hexa_card a:hover .icon{
-  transform: scale(1.12);
+.consulting_card .hexa_card:hover{
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 .consulting_card .hexa_card .icon{
   text-align: center;
